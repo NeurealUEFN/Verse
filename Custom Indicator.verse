@@ -41,6 +41,7 @@ indicator_manager<public>:=class(creative_device):
             if(CurrentIndex = 0, FirstIndicator := indicator_positions[CurrentIndex]):
                 SpawnedIndicatorResult := SpawnProp(indicator_prop, FirstIndicator.GetTransform())
                 set IsSpawnedIndicator = SpawnedIndicatorResult(0)
+                set CurrentIndex += 1
             else:
                 set CurrentIndex += 1
                 spawn{MoveIndicator()}            
