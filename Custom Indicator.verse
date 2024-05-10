@@ -10,19 +10,12 @@ using { /Fortnite.com/Characters }
  
 
 ## SET UP ## 
-# 1. Setup the map with the map indicator device wherever you want
-# the custom prop to appear. 
-# 2. Once the map indicators are setup, assign them to the indicator_positions 
-# array according to the order in which they should activate. The order of 
-# assigning them in the array is important
-# 3. Call update indicator to keep pushing the indicator to the next location, 
-# after the last position it will automatically delete
-# 4. Call end indicator to abruptly end the indicator from going forward and 
-# deleting it
-# 5. You can assign triggers to update_trigger and end_trigger, and use uefn
-# events system to manipulate the indicator too
-# 6. You can also change the duration in which the custom prop will move to the
-# next location
+# 1. Setup the map with the map indicator device wherever you want the custom prop to appear. 
+# 2. Once the map indicators are setup, assign them to the indicator_positions array according to the order in which they should activate. The order of assigning them in the array is important
+# 3. Call update indicator to keep pushing the indicator to the next location, after the last position it will automatically delete
+# 4. Call end indicator to abruptly end the indicator from going forward and deleting it
+# 5. You can assign triggers to update_trigger and end_trigger, and use uefn events system to manipulate the indicator too
+# 6. You can also change the duration in which the custom prop will move to the next location
 # 7. Every indicator sequence requires an indicator_manager
 
 indicator_manager<public>:=class(creative_device):
